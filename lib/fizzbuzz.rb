@@ -5,17 +5,14 @@ end
 
 def fizzbuzz(num)
   if num == 0 || !is_number?(num)
-    return "error"
+    'error'
+  elsif num % 15 == 0
+    'fizzbuzz'
+  elsif num % 3 == 0
+    'fizz'
+  elsif num % 5 == 0
+    'buzz'
   else
-    if num % 15 == 0
-      return "fizzbuzz"
-    elsif num % 3 == 0
-      return "fizz"
-    elsif num % 5 == 0
-      return "buzz"
-    else
-      # ensure return type stays as string
-      return num.to_s
-    end
+    num
   end
 end
