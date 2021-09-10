@@ -16,4 +16,12 @@ describe 'fizzbuzz' do
   it 'returns fizzbuzz when passed 15' do
     expect(fizzbuzz(2)).to eq '2'
   end
+
+  it 'returns error when passed 0' do
+    expect(fizzbuzz(0)).to eq 'error'
+  end
+
+  it 'returns error when passed 0' do
+    expect(fizzbuzz('test')).to eq 'error'
+  end
 end
